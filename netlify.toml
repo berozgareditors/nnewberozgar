@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 5 needs Node 18+. Pinning a current LTS keeps Netlify's build matching your machine.
+  NODE_VERSION = "20"
+
+# Single-page fallback: harmless now, and future-proofs you if you ever add client-side routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
