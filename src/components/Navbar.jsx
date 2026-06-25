@@ -5,18 +5,17 @@ import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { MenuRounded, CloseRounded } from "@mui/icons-material";
-import { brand, navLinks } from "../data/content.js";
+import { navLinks } from "../data/content.js";
 
 function Logo() {
   return (
-    <a href="#top" className="group flex flex-col leading-none">
-      <span className="font-display text-xl font-extrabold tracking-tight text-white sm:text-2xl">
-        {brand.name}
-        <span className="text-brand">.</span>
-      </span>
-      <span className="font-condensed text-[10px] uppercase tracking-[0.35em] text-white/55">
-        {brand.tagline}
-      </span>
+    <a href="#top" className="flex items-center">
+      <img 
+        src="/characters/berozgarlogo.png" 
+        alt="Berozgar Logo" 
+        // h-14 makes the logo larger; adjust this number if you need it bigger still
+        className="h-14 w-auto" 
+      />
     </a>
   );
 }
@@ -79,7 +78,7 @@ export default function Navbar() {
                 aria-label="Open menu"
                 className="md:!hidden"
               >
-                <MenuRounded />
+                <MenuRounded className="text-white" />
               </IconButton>
             </div>
           </div>
@@ -96,7 +95,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between border-b border-ink-line px-5 py-4">
           <Logo />
           <IconButton onClick={() => setOpen(false)} aria-label="Close menu">
-            <CloseRounded />
+            <CloseRounded className="text-white" />
           </IconButton>
         </div>
         <nav className="flex flex-col gap-1 p-4">
