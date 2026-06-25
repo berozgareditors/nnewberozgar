@@ -69,7 +69,7 @@ export const services = [
     key: "marketing",
     title: "Digital Marketing",
     blurb: "Strategic campaigns that convert followers into loyal customers.",
-    character: "/characters/marketing.mp4",
+    character: "/characters/hello-me.mp4",
     shots: ["/work/market-1.jpg", "/work/market-2.jpg"]
   },
   {
