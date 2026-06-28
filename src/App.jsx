@@ -22,7 +22,7 @@ export default function App() {
         <WhyTrust />
         <Testimonials />
         <HelloSection />
-        <Clients />
+        {/* <Clients /> */}
         <GetInTouch />
       </main>
       <Footer />
