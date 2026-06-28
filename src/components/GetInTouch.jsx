@@ -4,12 +4,13 @@ import { GroupsRounded } from "@mui/icons-material";
 import { SocialIcon } from "./icons.jsx";
 import Reveal from "./Reveal.jsx";
 import { aboutParagraph, socials, brand } from "../data/content.js";
+import ourImage from "../../public/Our Moji.png"
 
 export default function GetInTouch() {
   return (
     <section id="contact" className="relative bg-ink pb-20 pt-24 sm:pt-32">
       {/* blend down from the red Clients section */}
-      <div className="absolute inset-x-0 top-0 -translate-y-full h-24 bg-gradient-to-b from-brand to-ink" />
+      {/* <div className="absolute inset-x-0 top-0 -translate-y-full h-24 bg-gradient-to-b from-brand to-ink" /> */}
 
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -69,10 +70,7 @@ export default function GetInTouch() {
           <Reveal delay={120}>
             <div className="grid aspect-[4/3] w-full place-items-center rounded-4xl border border-ink-line bg-gradient-to-br from-ink-soft to-black">
               <div className="flex flex-col items-center gap-3 text-white/40">
-                <GroupsRounded sx={{ fontSize: 64 }} />
-                <span className="font-condensed text-sm uppercase tracking-[0.25em]">
-                  Your team illustration
-                </span>
+                <img src={ourImage} alt="" />
               </div>
             </div>
           </Reveal>
