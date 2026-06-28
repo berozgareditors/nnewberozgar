@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import { ArrowForwardRounded, PlayArrowRounded } from "@mui/icons-material";
 import { brand } from "../data/content.js";
-import heroVideo from "../../public/Videos/heroone.mov"
+import heroVideo from "../../public/Videos/heroone.mp4"
 
 export default function Hero() {
   return (
