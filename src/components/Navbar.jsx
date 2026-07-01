@@ -54,7 +54,9 @@ export default function Navbar() {
                 <a
                   key={l.href}
                   href={l.href}
-                  className="font-condensed text-sm uppercase tracking-wider text-white/75 transition-colors hover:text-white"
+                  className={`font-condensed text-sm uppercase tracking-wider transition-colors ${
+                    scrolled ? "text-white/90 hover:text-white" : "text-black hover:text-gray-500"
+                  }`}
                 >
                   {l.label}
                 </a>

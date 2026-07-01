@@ -28,7 +28,7 @@ function WorkCard({ work, index }) {
 
 export default function OurWorks() {
   return (
-    <section id="works" className="bg-ink py-20 sm:py-28">
+    <section id="works" className="bg-ink">
       <div className="container-x">
         <Reveal>
           <h2 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
