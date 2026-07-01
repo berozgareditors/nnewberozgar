@@ -7,8 +7,8 @@ export default function WhoWeAre() {
   return (
     <section
       id="who-we-are"
-      className="bg-[linear-gradient(0deg,rgba(10,10,10,1)_0%,rgba(196,39,18,1)_50%,rgba(10,10,10,1)_100%)] min-h-[500px] px-[5vw] py-[5vw] lg:flex lg:justify-center">
-      <div className="lg:w-[45%]">
+      className="container m-auto bg-[linear-gradient(0deg,rgba(10,10,10,1)_0%,rgba(196,39,18,1)_50%,rgba(10,10,10,1)_100%)] min-h-[500px] px-[5vw] py-[5vw] lg:flex lg:justify-center">
+      <div className="lg:w-[45%] ">
         <p className="text-4xl lg:text-7xl md:text-5xl font-bold">
           Who We Are
         </p>

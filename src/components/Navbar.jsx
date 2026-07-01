@@ -80,7 +80,7 @@ export default function Navbar() {
                 aria-label="Open menu"
                 className="md:!hidden"
               >
-                <MenuRounded className="text-white" />
+                <MenuRounded className="text-black" />
               </IconButton>
             </div>
           </div>
