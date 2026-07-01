@@ -8,11 +8,10 @@ function WorkCard({ work, index }) {
         href="#contact"
         className="group relative block overflow-hidden rounded-3xl border border-ink-line bg-ink-soft"
       >
-        {/* Swap picsum for your real portfolio images in /src/assets */}
         <img
-          src={`https://picsum.photos/seed/${work.seed}/720/560`}
+          src={work.image}
           alt={work.title}
-          className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-[220px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-90" />
@@ -39,7 +38,7 @@ export default function OurWorks() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {works.map((w, i) => (
-            <WorkCard key={w.seed} work={w} index={i} />
+            <WorkCard key={w.title} work={w} index={i} />
           ))}
         </div>
       </div>

@@ -3,6 +3,11 @@
 // in this one file — components read from it.
 // ─────────────────────────────────────────────────────────────
 
+import GraphicDesign from "../../public/Images/Graphic Design.png";
+import Print from "../../public/Images/Print.png";
+import Social from "../../public/Images/Social.jpeg";
+import VideoEditing from "../../public/Images/Video Editing.jpeg";
+
 export const brand = {
   name: "Berozgar",
   full: "Berozgar Editor",
@@ -105,14 +110,14 @@ export const services = [
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
 ];
-// Portfolio thumbnails. Swap `image` with files in /src/assets when ready.
+// Portfolio thumbnails. Each item now uses an imported image from the public Images folder.
 export const works = [
-  { title: "Brand identity system", category: "Graphic Design", seed: "berozgar-1", span: "lg" },
-  { title: "Launch flyer set", category: "Social", seed: "berozgar-2", span: "sm" },
-  { title: "Portrait flyer mockup", category: "Print", seed: "berozgar-3", span: "sm" },
-  { title: "Product reel", category: "Video Editing", seed: "berozgar-4", span: "sm" },
-  { title: "Motion title pack", category: "Motion Graphics", seed: "berozgar-5", span: "sm" },
-  { title: "Founder UGC ad", category: "UGC Video", seed: "berozgar-6", span: "lg" },
+  { title: "Brand identity system", category: "Graphic Design", image: GraphicDesign, span: "lg" },
+  { title: "Launch flyer set", category: "Social", image: Social, span: "sm" },
+  { title: "Portrait flyer mockup", category: "Print", image: Print, span: "sm" },
+  { title: "Product reel", category: "Video Editing", image: VideoEditing, span: "sm" },
+  { title: "Motion title pack", category: "Motion Graphics", image: GraphicDesign, span: "sm" },
+  { title: "Founder UGC ad", category: "UGC Video", image: Social, span: "lg" },
 ];
 
 export const features = [
